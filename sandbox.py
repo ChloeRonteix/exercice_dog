@@ -1,4 +1,7 @@
 from dog import Dog
+from fox import Fox
 
-dog_one = Dog('Tchoupi', 2, 6)
-dog_one.life()
+dog_one = Dog('Tchoupi', 2)
+fox_one = Fox('Rox', 7)
+
+fox_one.life()

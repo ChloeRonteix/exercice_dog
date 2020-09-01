@@ -1,14 +1,17 @@
 import time
 import random
+from animals import Animals
 
 
-class Dog:
+class Dog(Animals):
 
-    def __init__(self, name, age, weight):
+    def __init__(self, name, age):
+        Animals.__init__(self, name, age, race)
+        self.race = 'Chien'
         self.name = name
         self.age = age
         self.live = True
-        self.weight = weight
+        self.weight = 20
         self.eat = 50
         self.drink = 50
         self.sleep = 50
@@ -78,6 +81,11 @@ class Dog:
         else:
             self.eat -= 20
             self.weight -= 5
+            print(f'Be careful, {self.name} is angry!')
         menu.append(eat)
         
+
+
+
+
         
